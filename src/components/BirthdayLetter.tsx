@@ -2,12 +2,15 @@ import { TypewriterLetter } from "./TypewriterLetter";
 
 const letter = `Hai? how's life? 
 gimana rasanya jadi siswa lulusan terbaik di sekolah kemarin? senengg bangett yaa?
-orang orang juga bangga juga kan sama kamu ahahashshsh happy graduation ya!
+orang orang juga bangga juga ya pastinya sama kamu ahahashshsh happy graduation ya!
 teruss masukk ke smk negerii yg kamu mau? aku seneng banget dengernya, kamu terus berkembang 
-jauh lebi baik, kamu makin keren dan lebi hebat, aku bangga banget sama kamu
+jauh lebi baik, kamu makin keren dan lebi hebat, aku bangga banget sama kamu yang uda berubah sejauh ini, berkembang sejauh ini
+izinin doa doa  baik aku selalu menyertai kamu terus ya?, maaf ya kalo semua ini jelek ehehe aku cuma gatau mau nyampein ini gimana jadi
+aku coba pake cara ini dan berusaha bgt buat bikin kaya gini soalnya takut ngeganggu hidup kamu yang lagi baik baik aja 
 i hope kamu bahagia terus ya?  
-Semoga hidup selalu
+Semoga dunia selalu
 memelukmu dengan lembut.
+ohiya scroll lagi sampe bawah ya 
 Selamat ulang tahun.`;
 
 export function BirthdayLetter() {

@@ -11,11 +11,21 @@ import { Preloader } from "./components/Preloader";
 import { gratitudeLines } from "./data/chapters";
 import { useLenis } from "./hooks/useLenis";
 import { BirthdayLetter } from "./components/BirthdayLetter";
+import LetterPage from "./LetterPage";
 
 export default function App() {
   const [hasOpened, setHasOpened] = useState(false);
   useLenis(hasOpened);
+  const [showLetter, setShowLetter] = useState(false);
 
+
+  if (showLetter) {
+  return (
+  <LetterPage
+    onBack={() => setShowLetter(false)}
+  />
+);
+}
   return (
     <>
       <AnimatePresence>{!hasOpened && <Preloader onOpen={() => setHasOpened(true)} />}</AnimatePresence>
@@ -83,13 +93,16 @@ export default function App() {
           </ChapterShell>
 
           <ChapterShell
-          eyebrow="Chapter V"
-          title="Happy Birthday"
-          className="chapter-five chapter-warm chapter-long"
+  eyebrow="Last Chapter"
+  title="One More Thing..."
 >
-        <FlowerBloom />
-         <BirthdayLetter />
-        </ChapterShell>
+  <button
+    className="open-letter-btn"
+    onClick={() => setShowLetter(true)}
+  >
+    one last letter
+  </button>
+</ChapterShell>
 
           <FinalEnding />
         </motion.div>
