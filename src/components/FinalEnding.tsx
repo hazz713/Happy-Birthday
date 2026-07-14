@@ -101,7 +101,9 @@ export function FinalEnding() {
             animate={{ opacity: showGift && !opened ? 1 : 0, y: showGift ? 0 : 18, filter: "blur(0px)" }}
             transition={{ duration: 1.35, ease: [0.22, 1, 0.36, 1] }}
           >
-            Masih ada satu hadiah lagi.
+            gimana bunga dari aku?
+             kamu suka? aku juga buat disini,
+             pencet cobaa .
           </motion.p>
         )}
 

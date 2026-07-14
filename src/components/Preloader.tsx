@@ -7,8 +7,8 @@ type PreloaderProps = {
 const typingLines = [
   { text: "Hai.", delay: 0.4 },
   { text: "Hari ini...", delay: 1.8 },
-  { text: "Ada seseorang yang masih mengingat hari ulang tahunmu.", delay: 3.15 },
-  { text: "Dan ia menyiapkan hadiah kecil ini...", delay: 4.5 },
+  { text: "aku, seseorang yang masih mengingat hari ulang tahunmu.", delay: 3.15 },
+  { text: " menyiapkan hadiah kecil ini...", delay: 4.5 },
   { text: "hanya untukmu.", delay: 5.65 }
 ];
 

@@ -44,13 +44,13 @@ export default function App() {
          title="Happy Birthday."
          className="chapter-one"
 >
-       <p>Hari ini ada seseorang...</p>
-       <p>yang masih mengingat ulang tahunmu.</p>
+       <p>Hari ini aku berusaha untuk merayakanmu...</p>
+       <p>merayakan hanya dengan bunga kecil berwarna warna favoritmu.</p>
 
        <div style={{ height: "48px" }} />
 
-       <p>Dan meskipun namanya tak tertulis di sini...</p>
-       <p>ia hanya berharap...</p>
+       <p>meskipun namanya ga tertulis di sini..</p>
+       <p>aku cuma berharap...</p>
        <p>kamu tersenyum hari ini.</p>
          </ChapterShell>
 
