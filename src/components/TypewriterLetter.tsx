@@ -10,7 +10,7 @@ export function TypewriterLetter({ text }: Props) {
 
   const inView = useInView(ref, {
     once: true,
-    amount: 0.4,
+    amount: 0.1,
   });
 
   const [displayed, setDisplayed] = useState("");
@@ -32,10 +32,10 @@ export function TypewriterLetter({ text }: Props) {
 
       // 👇 ini yang bikin kamera ikut turun
       requestAnimationFrame(() => {
-        window.scrollBy({
-          top: 0.7,
-          behavior: "instant" as ScrollBehavior,
-        });
+       window.scrollBy({
+       top: 1,
+       behavior: "auto",
+       });
       });
 
       let speed = 26;
