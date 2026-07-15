@@ -85,10 +85,14 @@ export default function App() {
           <div style={{ height: "40px" }} />
 
            <p>
-           namun beberapa...
+           namun beberapa bintang...
           akan selalu menjadi
           langit yang paling indah
-          untuk diingat.
+          untuk diingat.</p> 
+
+         <div style={{ height: "40px" }} />
+         
+          <p>
           dan apakah aku adalah bintang 
           yang indah saat kamu ingat?
           idk ahahaha..
