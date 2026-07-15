@@ -1326,10 +1326,12 @@ letter-spacing:.08em;
 @media (max-width: 760px) {
 
   .chapter {
+    min-height: 100svh;
     padding: 5rem 1.2rem;
   }
 
   .chapter-long {
+    min-height: auto;
     padding-top: 6rem;
     padding-bottom: 7rem;
   }
@@ -1356,6 +1358,161 @@ letter-spacing:.08em;
     aspect-ratio: 1.1;
   }
 
+  .moon-glow {
+    top: 6vh;
+    right: 8vw;
+  }
+
+  .aurora {
+    filter: blur(50px);
+  }
+
+  /* ==== letter card ==== */
+
+  .birthday-letter {
+    width: min(760px, 100%);
+    margin-top: 2.5rem;
+    padding: 2rem 1.4rem;
+    border-radius: 20px;
+    gap: 1.8rem;
+  }
+
+  .letter-title {
+    font-size: 2.5rem;
+  }
+
+  .letter-subtitle {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .letter-content {
+    gap: 2.2rem;
+  }
+
+  .letter-content p {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    max-width: 100%;
+  }
+
+  .typewriter-letter {
+    font-size: 1.15rem;
+    line-height: 1.9;
+  }
+
+  .typewriter {
+    font-size: 1.3rem;
+    line-height: 1.7;
+  }
+
+  .back-button {
+    top: 14px;
+    left: 14px;
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+
+  /* ==== final ending / bouquet ==== */
+
+  .final-gift {
+    min-height: 110svh;
+  }
+
+  .final-gift-stage {
+    min-height: 100svh;
+    padding: 4.5rem 1rem;
+  }
+
+  .final-gift-line {
+    top: 12vh;
+    padding: 0 1.25rem;
+    font-size: clamp(1.35rem, 6.2vw, 2.1rem);
+    line-height: 1.25;
+  }
+
+  .bouquet-button {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: none;
+    width: min(22rem, 94vw);
+    height: min(24rem, 58vh);
+    bottom: 9vh;
+  }
+
+  .bouquet-button:hover,
+  .bouquet-button:focus-visible {
+    transform: translateY(-1.2rem) scale(1.05);
+  }
+
+  .bouquet-glow {
+    width: 17rem;
+    height: 17rem;
+  }
+
+  .flower-cluster {
+    width: 15rem;
+    height: 10.5rem;
+  }
+
+  .flower-cluster i {
+    width: 4.2rem;
+    height: 4.2rem;
+  }
+
+  .baby-breath {
+    width: 17rem;
+    height: 12rem;
+  }
+
+  .wrapping {
+    width: 8rem;
+    height: 13.5rem;
+  }
+
+  .wrapping-front {
+    width: 9.5rem;
+    height: 11rem;
+  }
+
+  .ribbon {
+    width: 5.6rem;
+    height: 1.6rem;
+  }
+
+  .ribbon i,
+  .ribbon b {
+    width: 2.5rem;
+    height: 2rem;
+  }
+
+  .ribbon i {
+    left: -1.6rem;
+  }
+
+  .ribbon b {
+    right: -1.6rem;
+  }
+
+  .final-message {
+    padding: 0 0.5rem;
+    font-size: clamp(1.5rem, 6.4vw, 2.4rem);
+  }
+
+}
+
+/* Perangkat sentuh: tidak ada kursor, matikan efek glow & mask kursor */
+@media (hover: none), (pointer: coarse) {
+  .mouse-glow {
+    display: none;
+  }
+
+  .star-field::after {
+    -webkit-mask-image: none;
+    mask-image: none;
+    opacity: 0.25;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

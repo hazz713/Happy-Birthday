@@ -30,7 +30,7 @@ export function Preloader({ onOpen }: PreloaderProps) {
           Finding the right stars...
         </motion.p>
 
-        <div className="space-y-5 font-serif text-4xl leading-tight text-softWhite sm:text-6xl">
+        <div className="space-y-5 font-serif text-3xl leading-tight text-softWhite sm:text-5xl md:text-6xl">
           {typingLines.map((line) => (
             <motion.p
               key={line.text}

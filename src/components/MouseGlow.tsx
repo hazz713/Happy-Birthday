@@ -21,7 +21,7 @@ export function MouseGlow() {
 
   return (
     <div
-      className="pointer-events-none fixed z-20 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-softPink/20 blur-3xl transition-transform duration-700"
+      className="mouse-glow pointer-events-none fixed z-20 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-softPink/20 blur-3xl transition-transform duration-700"
       style={{ left: position.x, top: position.y }}
       aria-hidden="true"
     />
