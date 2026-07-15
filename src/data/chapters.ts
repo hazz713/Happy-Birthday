@@ -44,8 +44,8 @@ export const gratitudeLines = [
 
 export const finalMessage = [
   "Tidak semua doa perlu diketahui siapa yang mengucapkannya.",
-  "Tidak semua kebaikan membutuhkan sebuah nama.",
-  "Ada seseorang...",
+  "semoga kamu seneng ya sama hadiah kecil dari aku, maaf kalo semua buatanku ini jelek.",
+  "aku seseorang...",
   "yang hanya ingin memastikan...",
   "kamu tersenyum di ulang tahunmu.",
   "Selamat ulang tahun."

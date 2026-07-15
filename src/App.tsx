@@ -85,10 +85,13 @@ export default function App() {
           <div style={{ height: "40px" }} />
 
            <p>
-           Namun beberapa...
+           namun beberapa...
           akan selalu menjadi
           langit yang paling indah
           untuk diingat.
+          dan apakah aku adalah bintang 
+          yang indah saat kamu ingat?
+          idk ahahaha..
          </p>
           </ChapterShell>
 

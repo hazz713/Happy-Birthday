@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 const starPoints = [
   { x: 18, y: 46 },
@@ -13,8 +14,13 @@ const starPoints = [
 export function Constellation() {
   const path = starPoints.map((point, index) => `${index === 0 ? "M" : "L"} ${point.x} ${point.y}`).join(" ");
 
+  // Observe the wrapper div, not the SVG children —
+  // Safari (iOS) doesn't support IntersectionObserver on SVG elements.
+  const wrapRef = useRef<HTMLDivElement>(null);
+  const inView = useInView(wrapRef, { once: false, amount: 0.4 });
+
   return (
-    <div className="constellation-wrap" aria-hidden="true">
+    <div ref={wrapRef} className="constellation-wrap" aria-hidden="true">
       <svg viewBox="0 0 100 100" className="h-full w-full">
         <motion.path
           d={path}
@@ -23,8 +29,7 @@ export function Constellation() {
           strokeWidth="0.34"
           strokeLinecap="round"
           initial={{ pathLength: 0, opacity: 0 }}
-          whileInView={{ pathLength: 1, opacity: 1 }}
-          viewport={{ once: false, amount: 0.6 }}
+          animate={inView ? { pathLength: 1, opacity: 1 } : { pathLength: 0, opacity: 0 }}
           transition={{ duration: 2.7, ease: "easeInOut" }}
         />
         {starPoints.map((point, index) => (
@@ -35,8 +40,7 @@ export function Constellation() {
             r={index === 3 ? 1.1 : 0.74}
             fill={index % 2 === 0 ? "#FF9FD6" : "#9C6ADE"}
             initial={{ scale: 0, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            viewport={{ once: false, amount: 0.6 }}
+            animate={inView ? { scale: 1, opacity: 1 } : { scale: 0, opacity: 0 }}
             transition={{ delay: index * 0.17, duration: 0.8 }}
           />
         ))}
